@@ -1,0 +1,73 @@
+@import "./variables";
+@import "./colors";
+@import "./mixins";
+@import "./media";
+
+
+.new_title{
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    @include fonts-source($size: 44px, $colour: color(primary-font-color), $weight: 700 , $lh: 48px);
+    &::before{
+            content: "";
+            background: linear-gradient(230.26deg, #2EC774 30.62%, #0084E3 69.74%);
+            background-repeat: no-repeat;
+            background-size: auto;
+            width: 150px;
+            height: 3px;
+            position: absolute;
+            top:100%;
+
+    }
+}
+.new_paragraph{
+    @include fonts-source($size: 16px, $colour: color(pure-black), $weight: 400);
+}
+
+.unique_features{
+    background: url(/assets/image/uniquehome.png);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+
+    .our_uniquefeatures{
+        padding: 35px 0;
+        .our_features{
+            .unique_featureul{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 40PX;
+                padding: 30px 0 50px 0;
+
+                .unique_featureli{
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    column-gap: 24px;
+                   
+                    .uniqueli_text{
+                        @include fonts-source($size: 16px, $colour: color(primary-font-color), $weight: 700 , $lh: 19px);
+                        max-width: 200px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .feature_button{
+                background: linear-gradient(95.73deg, #2EC774 -1.93%, #0084E3 101.79%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 50px;
+                padding: 15px 30px;
+                margin: 0 auto;
+                @include fonts-source($size: 16px, $colour: color(pure-black), $weight: 800 , $lh: 19px);
+                color: #fff;
+            }
+        }
+    }
+
+
+
+
+
+
+}
