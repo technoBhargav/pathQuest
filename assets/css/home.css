@@ -1,0 +1,110 @@
+/*----------------- responsive variations -----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Courgette", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.Homebanner {
+  position: relative;
+  background: linear-gradient(to left, rgb(35, 35, 67) 50%, rgba(35, 35, 67, 0.5)), url(../image/homebanner.png) no-repeat left;
+  background-size: cover;
+}
+.Homebanner .banner_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+}
+@media (max-width: 767px) {
+  .Homebanner .banner_box {
+    flex-direction: column;
+  }
+}
+.Homebanner .banner_box .banner_text {
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .Homebanner .banner_box .banner_text {
+    width: 100%;
+  }
+}
+.Homebanner .banner_box .banner_text h2 {
+  margin-bottom: 23px;
+  font-size: 39px;
+}
+@media (max-width: 767px) {
+  .Homebanner .banner_box .banner_text h2 {
+    font-size: 25px;
+  }
+}
+.Homebanner .banner_box .banner_text p {
+  max-width: 633px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .Homebanner .banner_box .banner_text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.Homebanner .banner_box .banner_img_grp {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 556px;
+}
+@media (max-width: 767px) {
+  .Homebanner .banner_box .banner_img_grp {
+    width: 100%;
+  }
+}
+.Homebanner .banner_box .banner_img_grp .girl {
+  width: 93%;
+  height: 100%;
+}
+.Homebanner .banner_box .banner_img_grp .spinner {
+  position: absolute;
+  right: 0px;
+  top: 107px;
+  align-self: flex-start;
+  width: 160px;
+  height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Homebanner .banner_box .banner_img_grp .flow_graph {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 160px;
+  height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.unique_features_sec {
+  margin: 0 auto 0 0;
+  display: flex;
+}
+.unique_features_sec .bg_image {
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(95.73deg, #2EC774 -1.93%, #0084E3 101.79%), url(../image/Rectangle\ 237.png);
+}/*# sourceMappingURL=home.css.map */
