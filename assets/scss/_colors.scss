@@ -1,7 +1,12 @@
 $colors: (
     primary-font-color: #232323,
     pure-black: #000,
-    pure-white: #fff
+    pure-white: #fff,
+    pure-purple:#2ec774,
+    p-light-blue: #0084e3,
+    light_white: #f5f9ff,
+    
+
 );
 
 @function color($color-name) {
