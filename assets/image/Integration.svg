@@ -1,11 +1,38 @@
 <svg width="447" height="276" viewBox="0 0 447 276" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+		<![CDATA[#eUOSy3oiDm15_tr {animation: eUOSy3oiDm15_tr__tr 1000ms linear infinite normal forwards}@keyframes eUOSy3oiDm15_tr__tr { 0% {transform: translate(287px,69.5px) rotate(0deg)} 100% {transform: translate(287px,69.5px) rotate(-360deg)}}]]>
+        path{
+      vector-effect: non-scaling-stroke;
+      stroke-dasharray: 2px 4px 6px 8px;
+      animation: stroke 0.2s linear infinite;
+      shape-rendering: geometricPrecision;
+      stroke-dashoffset: 15px;
+     }
+    @keyframes stroke {
+      to {stroke-dashoffset: 0;}
+    }
+
+    .sync{
+        animation: rotation 2s infinite linear;
+    }
+    @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+ 
+
+	</style>
 <path d="M10.5 1H183C200.673 1 215 15.3269 215 33V90C215 107.673 229.327 122 247 122H443" stroke="#2EC774" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" stroke-dasharray="2 4 6 8"/>
 <path d="M10.5 275H183C200.673 275 215 260.673 215 243V186C215 168.327 229.327 154 247 154H443" stroke="#2EC774" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" stroke-dasharray="2 4 6 8"/>
 <path d="M1 138.5H445.5" stroke="#2EC774" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 4 6 8"/>
 <g filter="url(#filter0_d_9789_11775)">
 <circle cx="338" cy="137" r="42" fill="white"/>
 </g>
-<circle cx="338" cy="137" r="42" fill="url(#pattern0)"/>
+<circle class="sync" cx="338" cy="137" r="42" fill="url(#pattern0)" style="transform-origin: 338px 137px;"/>
 <defs>
 <filter id="filter0_d_9789_11775" x="251" y="54" width="174" height="174" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

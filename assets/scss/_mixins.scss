@@ -15,3 +15,6 @@
         line-height: $lh;
     }
 }
+@mixin new_paragraph {
+    @include fonts-source($size: 16px, $colour: color(pure-black), $weight: 400);
+} 
