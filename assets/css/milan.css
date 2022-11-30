@@ -1,0 +1,117 @@
+.width-30{
+    float: left;
+    width: 30%;
+  }
+  .soft-images{
+    background: #FFFFFF;
+    box-shadow: 9px 3px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  .soft-svg{
+    float: left;
+    width: 40%;
+  }
+  .paddtb_90 {
+    padding: 90px 0;
+    float: left;
+    width: 100%;
+  }
+  .bg-white{
+    background-color: #ffffff;
+  }
+  .bg-blue{
+    background: #232343;
+  }
+  .talk-to-form-sec{
+    float: left;
+    width: 50%;
+    padding: 40px 40px 40px 110px;
+  }
+  .form-inner{
+    background: linear-gradient(168.5deg, rgba(255, 255, 255, 0.25) 3.55%, rgba(255, 255, 255, 0) 49.21%, rgba(255, 255, 255, 0.25) 92.52%);
+    backdrop-filter: blur(2.5px);
+    border-radius: 15px;
+    padding: 40px 45px;
+  }
+  .form-inner h4{
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .blue-btn {
+    border-radius: 10px;
+    background: #0a88e3;
+    border: 1px solid #0a88e3;
+    color: #ffffff;
+    padding: 13px 16px;
+    display: inline-block;
+    min-width: 170px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    text-align: center;
+    cursor: pointer;
+  }
+  .blue-btn:hover {
+    background: transparent;
+    color: #0a88e3;
+  }
+  .cost-slide-txt h4{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    color: #232343;
+    width: 100%;
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .cost-slide-txt h4::before{
+    content: "";
+    background-image: url(../img/quate.png);
+    width: 52px;
+    position: absolute;
+    top: -30px;
+    height: 83px;
+    left: -20px;
+  }
+  .cost-slide-txt h4::after{
+    content: "";
+    background: linear-gradient(230.26deg, #2EC774 30.62%, #0084E3 69.74%);
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .cost-slide-txt span{
+    float: left;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #232343;
+    padding-top: 20px;
+  }
+  .full-flow-scle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-customer-sec{
+    padding: 75px 60px;
+    float: left;
+    width: 50%;
+  }

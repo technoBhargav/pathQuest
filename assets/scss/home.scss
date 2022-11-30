@@ -11,7 +11,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 hr {
-  background: linear-gradient(230.26deg, color(pure-purple) 30.62%, color(p-light-blue) 69.74%);
+  background: linear-gradient(
+    230.26deg,
+    color(pure-purple) 30.62%,
+    color(p-light-blue) 69.74%
+  );
   background-repeat: no-repeat;
   background-size: auto;
   width: 150px;
@@ -33,9 +37,15 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 15px;
+    @include mobile-view{
+      padding: 30px ;
+    }
     @include tab-view {
       flex-direction: column;
+    }
+    @include mobile-view {
+      padding: 30px 15px;
     }
     .banner_text {
       position: relative;
@@ -45,23 +55,24 @@ hr {
       color: color(pure-white);
       @include tab-view {
         width: 100%;
+        order: 1;
+        
       }
       h2 {
-        @include fonts-source(
-          $size: 39px,
-          $weight: 700
-        );
+        @include fonts-source($size: 39px, $weight: 700);
         margin-bottom: 23px;
+        @include ipad-view {
+          @include fonts-source($size: 28px, $weight: 600);
+        }
         @include tab-view {
           font-size: 25px;
         }
       }
       p {
-        @include fonts-source(
-        $size: 24px,
-        $weight: 400,
-        $lh: 30px
-      );
+        @include fonts-source($size: 24px, $weight: 400, $lh: 30px);
+        @include ipad-view {
+          @include fonts-source($size: 17px, $lh: 1.5);
+        }
         max-width: 633px;
         @include tab-view {
           font-size: 16px;
@@ -71,6 +82,9 @@ hr {
       .banner_button {
         display: flex;
         margin-top: 30px;
+        @include ipad-view {
+          margin-top: 10px;
+        }
         .btn {
           margin-right: 20px;
           padding: 15px 25px;
@@ -84,6 +98,9 @@ hr {
             background-color: color(p-light-blue);
             color: color(pure-white);
           }
+          @include ipad-view {
+            padding: 10px 20px;
+          }
         }
       }
     }
@@ -92,8 +109,11 @@ hr {
       width: 40%;
       display: flex;
       flex-direction: column;
-      height: 556px;
       @include tab-view {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+      @include mobile-view {
         width: 100%;
       }
       .girl {
@@ -105,17 +125,17 @@ hr {
         right: 0px;
         top: 107px;
         align-self: flex-start;
-        width: 160px;
-        height: 160px;
-        object-fit: contain;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;      
       }
       .flow_graph {
         position: absolute;
         left: 0;
         bottom: 10px;
-        width: 160px;
-        height: 160px;
-        object-fit: contain;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;       
       }
     }
   }
@@ -126,22 +146,23 @@ hr {
   background-color: color(light_white);
   height: 100%;
   width: 100%;
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
+  @include mobile-view {
+    padding: 30px 5px;
   }
   .title_text {
     text-align: center;
     margin-bottom: 30px;
     h2 {
       @include fonts-source($size: 44px, $weight: 700);
+      @include tab-view {
+        @include fonts-source($size: 35px, $weight: 600);
+      }
     }
     p {
-      @include fonts-source(
-      $size: 16px,
-      $lh: 19px
-    );
+      @include fonts-source($size: 16px, $lh: 19px);
+      @include ipad-view {
+        @include fonts-source($lh: 1.5);
+      }
     }
   }
 
@@ -153,66 +174,74 @@ hr {
   }
   .rtl-slider {
     width: 35%;
-
     position: absolute;
-    left: -15px;
+    left: -2px;
     display: flex;
     @include tab-view {
       position: relative;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
     }
     .main_slide_img {
       height: auto;
-      cursor: pointer;
       width: 100%;
       height: 500px;
+      margin-right: 10px;
+      @include tab-view {
+        height: 300px;
+      }
       img {
         width: 100%;
         object-fit: fill;
         height: 100%;
+        @include tab-view {
+          border-radius: 20px;
+        }
       }
     }
   }
   .rtl-slider-nav {
-    padding: 5px 20px;
-    height: 500px;
+    // height: 500px;
+    overflow: hidden;
     .slick-list {
       padding: 0 !important;
     }
     .rtl-slider-slide {
       opacity: 0.75;
       transition: all 0.3s ease;
-      height: auto;
       display: flex;
-      flex-direction: column;
-      // margin: 10px 0;
-      margin-top: -30px;
-      .slide_text_box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 30px 10px;
-        margin: 20px 0;
-        img {
-          width: 60px;
-          height: 60px;
-          object-fit: contain;
-          margin-right: 20px;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 10px;
+
+      @include ipad-view {
+        padding: 20px 10px;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        object-fit: contain;
+      }
+      .text {
+        h4 {
+          font-size: 24px;
+          margin-bottom: 10px;
+          @include ipad-view {
+            font-size: 19px;
+          }
         }
-        .text {
-          h4 {
-            font-size: 24px;
-            margin-bottom: 10px;
-          }
-          p {
-            margin-bottom: 0;
-          }
+        p {
+          margin-bottom: 0;
         }
       }
     }
     .slick-current.slick-active {
       opacity: 1;
       background: color(pure-white);
-      box-shadow: 0px 4px 30px rgb(0 0 0 / 15%);
+      box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
       border-radius: 10px;
       h4 {
         color: color(p-light-blue);
@@ -224,61 +253,78 @@ hr {
 .future_focused_business {
   position: relative;
   padding: 50px 0;
+  @include mobile-view {
+    padding: 30px 5px;
+  }
   .title_text {
     text-align: center;
     margin-bottom: 30px;
     h2 {
-      @include fonts-source(
-      $size: 44px,
-      $weight: 700,
-    );
+      @include fonts-source($size: 44px, $weight: 700);
+      @include tab-view {
+        @include fonts-source($size: 30px, $weight: 600);
+      }
     }
     p {
-      @include fonts-source(
-      $size: 16px,
-      $lh: 19px
-    );
+      @include fonts-source($size: 16px, $lh: 19px);
+      @include tab-view {
+        @include fonts-source($lh: 1.5);
+      }
     }
   }
   .empower_future {
+    min-height: 170px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include mobile-view{
+      padding: 0 10px;
+    }
     .box {
       display: flex;
-      padding: 30px 20px;
-      align-items: flex-start;
-      // background: color(pure-white);
-      background: linear-gradient(
-        to left,
-        rgba(255, 255, 255, 0) 30%,
-        rgba(255, 255, 255, 1) 70%
-      );
-      box-shadow: 9px 3px 25px rgba(0, 0, 0, 0.1);
-      margin: 20px;
+      min-height: 170px;
+      height: 100%;
+      margin: 30px 20px;
+      align-items: center;
+      background: color(pure-white);
+      @include mobile-view{
+        margin: 15px;
+      }
       h1 {
-        background: linear-gradient(95.73deg, color(pure-purple) -1.93%, color(p-light-blue) 101.79%);
+        background: linear-gradient(
+          95.73deg,
+          color(pure-purple) -1.93%,
+          color(p-light-blue) 101.79%
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         font-weight: 800;
         font-size: 128px;
-        margin-right: 20px;
       }
-      h5 {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 16px;
+      .text {
+        padding: 20px;
+        margin-left: -40px;
+        padding-left: 60px;
+        box-shadow: 9px 3px 25px rgba(0, 0, 0, 0.1);
+        h5 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
       }
     }
     .slick-custom-arrow {
       position: absolute;
       z-index: 10;
-      width: 100px;
-      left: 50%;
+      // width: 100px;
+      left: 49%;
       transform: translate(-50%);
-
       @include tab-view {
         left: 45%;
       }
@@ -310,8 +356,12 @@ hr {
     text-align: center;
   }
   .feature_button {
-    background: linear-gradient(95.73deg, color(pure-purple) -1.93%, color(p-light-blue) 101.79%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(
+      95.73deg,
+      color(pure-purple) -1.93%,
+      color(p-light-blue) 101.79%
+    );
+    transition: 0.5s all;
     border-radius: 50px;
     padding: 15px 30px;
     margin: 0 auto;
@@ -323,5 +373,8 @@ hr {
       $lh: 19px
     );
     color: color(pure-white);
+    &:hover{
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
 }
