@@ -3,6 +3,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    infinite: true,
     centerPadding: '0px',
     fade: true,
     autoplay: true,
@@ -11,6 +12,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     vertical: true,
+    infinite: true,
     autoplay: true,
     asNavFor: '.rtl-slider',
     centerMode: true,
@@ -40,9 +42,7 @@ $(document).ready(function () {
     ]
   });
   $('.testimonial-slider').slick({
-      autoplay: false,
-      autoplaySpeed: 1000,
-      centerPadding: '50px',
+      autoplay: true,
       speed: 600,
       draggable: true,
       autoplay: true,

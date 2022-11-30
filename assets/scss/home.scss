@@ -47,14 +47,14 @@ body {
         @include fonts-source($size: 36px, $weight: 700, $colour:color(pure-white));
         margin-bottom: 23px;
         @include ipad-view {
-          @include fonts-source($size: 28px, $weight: 600,$colour:color(pure-white));
+          @include fonts-source($size: 28px, $weight: 600);
         }
         @include tab-view {
           font-size: 25px;
         }
       }
       p {
-        @include fonts-source($size: 24px, $weight: 400, $lh: 30px);
+        @include fonts-source($size: 24px, $weight: 400, $lh: 30px,$colour:color(pure-white));
         @include ipad-view {
           @include fonts-source($size: 17px, $lh: 1.5);
         }
@@ -360,6 +360,7 @@ body {
         h4 {
           font-size: 24px;
           margin-bottom: 10px;
+          font-weight: 700;
           @include ipad-view {
             font-size: 19px;
           }
@@ -522,7 +523,7 @@ body {
 }
 .our-customer-sec{
 .testimonial{
-width: 712px;
+width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

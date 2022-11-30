@@ -55,7 +55,6 @@ body {
 @media (max-width: 991px) {
   .Homebanner .banner_box .banner_text h2 {
     font-size: 28px;
-    color: #fff;
     font-weight: 600;
   }
 }
@@ -66,6 +65,7 @@ body {
 }
 .Homebanner .banner_box .banner_text p {
   font-size: 24px;
+  color: #fff;
   font-weight: 400;
   line-height: 30px;
   max-width: 633px;
@@ -385,6 +385,7 @@ body {
 .why_pathquest_section .rtl-slider-nav .rtl-slider-slide .text h4 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 @media (max-width: 991px) {
   .why_pathquest_section .rtl-slider-nav .rtl-slider-slide .text h4 {
@@ -541,7 +542,7 @@ body {
 }
 
 .our-customer-sec .testimonial {
-  width: 712px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
