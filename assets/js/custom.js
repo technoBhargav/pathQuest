@@ -25,17 +25,33 @@ $(document).ready(function () {
     centerPadding: '120px',
     slidesToShow: 2,
     arrows: true,
-    autoplay: true,
+    // autoplay: true,
     dots: false,
+    adaptiveHeight: false,
     nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/assets/image/next-grey.png" alt=""></div>',
     prevArrow: '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/assets/image/prev-grey.png" alt=""></div>',
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
-
           centerMode: true,
           slidesToShow: 1,
+          centerPadding: '40px',
+        }
+      },
+      {
+        breakpoint: 1366,
+        settings: {
+          centerMode: true,
+          slidesToShow: 2,
+          centerPadding: '40px',
+        }
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          centerMode: true,
+          slidesToShow: 3,
           centerPadding: '40px',
         }
       }
