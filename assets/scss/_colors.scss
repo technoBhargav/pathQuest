@@ -4,9 +4,10 @@ $colors: (
     pure-white: #fff,
     pure-purple:#2ec774,
     p-light-blue: #0084e3,
+    light_blue:#0a88e3,
     light_white: #f5f9ff,
-    
-
+    font-color: #232343,
+    light_gray: #ddd
 );
 
 @function color($color-name) {

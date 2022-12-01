@@ -25,7 +25,7 @@ $(document).ready(function () {
     centerPadding: '120px',
     slidesToShow: 2,
     arrows: true,
-    // autoplay: true,
+    autoplay: true,
     dots: false,
     adaptiveHeight: false,
     nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/assets/image/next-grey.png" alt=""></div>',

@@ -10,9 +10,10 @@ body {
   font-family: "Courgette", cursive;
   font-family: "Poppins", sans-serif;
 }
+
 .Homebanner {
   position: relative;
-  background: linear-gradient(269.77deg, #232343 44%, rgba(35, 35, 67, 0.6) 115.82%), url(../image/homebanner.png) no-repeat left;
+  background: linear-gradient(269.77deg, color(font-color) 44%, rgba(35, 35, 67, 0.6) 115.82%), url(../image/homebanner.png) no-repeat left;
   background-size: cover;
   .banner_box {
     display: flex;
@@ -84,7 +85,7 @@ body {
         }
         .btn_first{
           background-color: color(p-light-blue);
-          color:#fff;
+          color:color(pure-white);
           &:hover{
             background-color: transparent;
             color: color(p-light-blue);
@@ -140,7 +141,7 @@ body {
   );
   &::before {
     content: "";
-    background: linear-gradient(230.26deg, #2ec774 30.62%, #0084e3 69.74%);
+    background: linear-gradient(230.26deg, color(pure-purple) 30.62%, color(p-light-blue) 69.74%);
     background-repeat: no-repeat;
     background-size: auto;
     width: 150px;
@@ -156,7 +157,7 @@ body {
 .financial_intelligence {
   padding: 70px 0 50px;
   margin-bottom: 50px;
-  background: linear-gradient(90deg, #fff 55%, #deebff 45%);
+  background: linear-gradient(90deg, color(pure-white) 55%, color(light_blue) 45%);
   .financial_intel_view {
     .new_title{
       font-size: 40px;
@@ -234,8 +235,8 @@ body {
         .feature_button {
           background: linear-gradient(
             95.73deg,
-            #2ec774 -1.93%,
-            #0084e3 101.79%
+            color(pure-purple) -1.93%,
+            color(p-light-blue) 101.79%
           );
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 50px;
@@ -248,7 +249,7 @@ body {
             $weight: 800,
             $lh: 19px
           );
-          color: #fff;
+          color: color(pure-white);
 
           img {
             padding-right: 12px;
@@ -345,11 +346,22 @@ body {
       @include ipad-view {
         padding: 20px 10px;
       }
-      img {
-        width: 60px;
-        height: 60px;
+      h1{
+        background: linear-gradient(
+          95.73deg,
+          color(pure-purple) -1.93%,
+          color(p-light-blue) 101.79%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 800;
+        font-size: 60px;
+        margin-bottom: 0;
+        line-height: 60px;
         margin-right: 20px;
-        object-fit: contain;
+        letter-spacing: initial;
+        opacity: 0.5;
       }
       .text {
         h4 {
@@ -414,14 +426,13 @@ body {
   .empower_future {
     height: 100%;
     width: 100%;
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
     @include mobile-view{
       padding: 0 10px;
     }
     .box {
       display: flex;
-      min-height: 100%;
       height: 100%;
       margin: 40px;
       align-items: center;
@@ -435,6 +446,7 @@ body {
         position: relative;
         padding: 30px 20px;
         height: 100%;
+        min-height: 220px;
         h1 {
           background: linear-gradient(
             95.73deg,
@@ -525,101 +537,7 @@ body {
     }
   }
 }
-.our-customer-sec{
-.testimonial{
-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .testimonial_box_text{
-    text-align: center;
-    h2{
-      font-size: 44px;
-      margin-top: 30px;
-      &::after{
-        content:url(../image/quote.png);
-        position: absolute;
-        top: -25px;
-        left: 0px;
 
-      }
-    }
-    .new_title{
-      &::before{
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-      }
-    }
-    h3{
-      font-size: 24px;
-      margin: 20px 0;
-    }
-    p{
-      @include new_paragraph;
-    }
-  }
-
-}
-.slider_dots{
-  width: 70%;
-margin: 0 auto;
-}
-.slide img {
-  display: block;
-  width: 100%;
-}
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 1rem 0;
-  list-style-type: none;
-}
-.slick-dots button {
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  padding: 0;
-  border: none;
-  border-radius: 100%;
-  background-color: grey;
-  text-indent: -9999px;
-}
-.slider_dots .slider_navigators {
-  // background-color: #9E9E9E;
-  // border-radius: 50%;
-  margin: 10px;
-  transform: scale(0.4);
-  outline: none;
-  cursor: pointer;
-}
-.slider_dots .slider_navigators img{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-.slider_dots .slider_navigators.slick-active {
-  transform: scale(0.70);
-}
-.slider_navigators.slick-active.slick-current {
-  transform: scale(1);
-  .testimonial_box-name-job{
-    transform: scalex();
-    display: block;
-  }
-}
-.testimonial_box-name-job{
-  text-align: center;
-  display: none;
-  position: relative;
-  text-align: center;
-  margin-top: 10px;
-  h4{
-    white-space:nowrap;
-  }
-}
-}
 .pqscale{
   .title_text{
     .new_title{
@@ -669,7 +587,7 @@ margin: 0 auto;
         padding: 10px 20px;
         transform: translate(0,-50%);
         top: 50%;
-        background: #fff;
+        background: color(pure-white);
         box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
         border-radius: 29.5px;
       }
@@ -680,7 +598,7 @@ margin: 0 auto;
       padding: 10px 20px;
       transform: translate(0,-50%);
       top: 50%;
-      background: #fff;
+      background: color(pure-white);
       box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
       border-radius: 29.5px;
     }
@@ -731,7 +649,7 @@ margin: 0 auto;
   width: 60%;
   margin: 0 auto;
   padding: 10px 0;
-  background: linear-gradient(95.73deg, #2EC774 -1.93%, #0084E3 101.79%);
+  background: linear-gradient(95.73deg, color(pure-purple) -1.93%, color(p-light-blue) 101.79%);
   border-radius: 30px 30px 0px 0px;
   h4{
     text-align: center;  
@@ -746,7 +664,7 @@ margin: 0 auto;
   width: 30%;
 }
 .soft-images{
-  background: #FFFFFF;
+  background: color(pure-white);
   box-shadow: 9px 3px 25px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 25px;
@@ -767,7 +685,7 @@ margin: 0 auto;
   float: left;
   width: 100%;
   background: color(light_white);
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid color(secondary_light_gray);
   h2{
     margin-bottom: 20px;
   }
@@ -776,10 +694,10 @@ margin: 0 auto;
   }
 }
 .bg-white{
-  background-color: #ffffff;
+  background-color: color(pure-white);
 }
 .bg-blue{
-  background: #232343;
+  background: color(font-color);
 }
 .full-flow-scle{
   display: flex;
@@ -819,16 +737,16 @@ margin: 0 auto;
       }
       .form-group {
         input {
-        border: 1px solid #DADADA;
+        border: 1px solid color(secondary_ray);
         border-radius: 10px;
         padding: 13px 15px;
         font-size: 14px;
-        color: #232343;
+        color: color(font-color);
         &:focus{
           box-shadow: none;
          }
         &::placeholder{         
-            color: #232343;        
+            color: color(font-color);        
         }
       }
       select {
@@ -836,7 +754,7 @@ margin: 0 auto;
         height: auto;
         border-radius: 10px;
         font-size: 14px;
-        color: #232343;
+        color: color(font-color);
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
@@ -848,15 +766,15 @@ margin: 0 auto;
       width: 100%;
       font-weight: 700;
       font-size: 44px;
-      color: #FFF;
+      color: color(pure-white);
       margin-bottom: 30px;
       text-align: center;
     }
     .blue-btn {
       border-radius: 10px;
-      background: #0a88e3;
-      border: 1px solid #0a88e3;
-      color: #ffffff;
+      background: color(light_blue);
+      border: 1px solid color(light_blue);
+      color: color(pure-white);
       padding: 13px 16px;
       display: inline-block;
       min-width: 170px;
@@ -866,7 +784,7 @@ margin: 0 auto;
       cursor: pointer;
       &:hover {
         background: transparent;
-        color: #0a88e3;
+        color: color(light_blue);
       }
     }
     }
@@ -884,7 +802,7 @@ margin: 0 auto;
       text-align: center;
       h2 {
         font-size: 39px;
-        color: #232343;
+        color: color(font-color);
         font-weight: 800;
         position: relative;
         &::after {
@@ -905,22 +823,23 @@ margin: 0 auto;
     h3 {
       font-size: 24px;
       margin: 20px 0;
-      color: #232343;
+      color: color(font-color);
     }
     }
     .testimonial_box_text {
       text-align: center;
       p {
         font-size: 16px;
-        color: #000;
+        color: color(pure-black);
         font-weight: 400;
-        color: #232343;
+        color: color(font-color);
       }
     }
   }
   .slider_dots {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 25px;
     @include ipad-view{
       margin-bottom: 20px;
     }
@@ -934,14 +853,14 @@ margin: 0 auto;
       width: 130px;
       h4 {
         white-space: nowrap;
-        color: #232343;
+        color: color(font-color);
         font-weight: 700;
         font-size: 16px;
         margin-bottom: 5px;
         text-transform: capitalize;
       }
       p {
-        color: #232343;
+        color: color(font-color);
         font-weight: 400;
         font-size: 14px;
         text-transform: capitalize;
@@ -956,7 +875,7 @@ margin: 0 auto;
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        box-shadow: 0px 0px 4px #ddd;
+        box-shadow: 0px 0px 4px color(light_gray);
       }
     }
   }

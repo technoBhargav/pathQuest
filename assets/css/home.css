@@ -188,7 +188,7 @@ body {
 .financial_intelligence {
   padding: 70px 0 50px;
   margin-bottom: 50px;
-  background: linear-gradient(90deg, #fff 55%, #deebff 45%);
+  background: linear-gradient(90deg, #fff 55%, #0a88e3 45%);
 }
 .financial_intelligence .financial_intel_view .new_title {
   font-size: 40px;
@@ -375,12 +375,18 @@ body {
     padding: 20px 10px;
   }
 }
-.why_pathquest_section .rtl-slider-nav .rtl-slider-slide img {
-  width: 60px;
-  height: 60px;
+.why_pathquest_section .rtl-slider-nav .rtl-slider-slide h1 {
+  background: linear-gradient(95.73deg, #2ec774 -1.93%, #0084e3 101.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 0;
+  line-height: 60px;
   margin-right: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  letter-spacing: initial;
+  opacity: 0.5;
 }
 .why_pathquest_section .rtl-slider-nav .rtl-slider-slide .text h4 {
   font-size: 24px;
@@ -448,6 +454,8 @@ body {
 .future_focused_business .empower_future {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 575px) {
   .future_focused_business .empower_future {
@@ -456,7 +464,6 @@ body {
 }
 .future_focused_business .empower_future .box {
   display: flex;
-  min-height: 100%;
   height: 100%;
   margin: 40px;
   align-items: center;
@@ -473,6 +480,7 @@ body {
   position: relative;
   padding: 30px 20px;
   height: 100%;
+  min-height: 220px;
 }
 .future_focused_business .empower_future .box .text_box h1 {
   background: linear-gradient(95.73deg, #2ec774 -1.93%, #0084e3 101.79%);
@@ -548,96 +556,6 @@ body {
 .future_focused_business .feature_button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-}
-
-.our-customer-sec .testimonial {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.our-customer-sec .testimonial .testimonial_box_text {
-  text-align: center;
-}
-.our-customer-sec .testimonial .testimonial_box_text h2 {
-  font-size: 44px;
-  margin-top: 30px;
-}
-.our-customer-sec .testimonial .testimonial_box_text h2::after {
-  content: url(../image/quote.png);
-  position: absolute;
-  top: -25px;
-  left: 0px;
-}
-.our-customer-sec .testimonial .testimonial_box_text .new_title::before {
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-.our-customer-sec .testimonial .testimonial_box_text h3 {
-  font-size: 24px;
-  margin: 20px 0;
-}
-.our-customer-sec .testimonial .testimonial_box_text p {
-  font-size: 16px;
-  color: #000;
-  font-weight: 400;
-}
-.our-customer-sec .slider_dots {
-  width: 70%;
-  margin: 0 auto;
-}
-.our-customer-sec .slide img {
-  display: block;
-  width: 100%;
-}
-.our-customer-sec .slick-dots {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 1rem 0;
-  list-style-type: none;
-}
-.our-customer-sec .slick-dots button {
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  padding: 0;
-  border: none;
-  border-radius: 100%;
-  background-color: grey;
-  text-indent: -9999px;
-}
-.our-customer-sec .slider_dots .slider_navigators {
-  margin: 10px;
-  transform: scale(0.4);
-  outline: none;
-  cursor: pointer;
-}
-.our-customer-sec .slider_dots .slider_navigators img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-.our-customer-sec .slider_dots .slider_navigators.slick-active {
-  transform: scale(0.7);
-}
-.our-customer-sec .slider_navigators.slick-active.slick-current {
-  transform: scale(1);
-}
-.our-customer-sec .slider_navigators.slick-active.slick-current .testimonial_box-name-job {
-  transform: scalex();
-  display: block;
-}
-.our-customer-sec .testimonial_box-name-job {
-  text-align: center;
-  display: none;
-  position: relative;
-  text-align: center;
-  margin-top: 10px;
-}
-.our-customer-sec .testimonial_box-name-job h4 {
-  white-space: nowrap;
 }
 
 .pqscale .title_text .new_title::before {
@@ -730,7 +648,7 @@ body {
   width: 60%;
   margin: 0 auto;
   padding: 10px 0;
-  background: linear-gradient(95.73deg, #2EC774 -1.93%, #0084E3 101.79%);
+  background: linear-gradient(95.73deg, #2ec774 -1.93%, #0084e3 101.79%);
   border-radius: 30px 30px 0px 0px;
 }
 .footertop_line h4 {
@@ -747,7 +665,7 @@ body {
 }
 
 .soft-images {
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 9px 3px 25px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 25px;
@@ -772,7 +690,7 @@ body {
   float: left;
   width: 100%;
   background: #f5f9ff;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid;
 }
 .paddtb_90 h2 {
   margin-bottom: 20px;
@@ -782,7 +700,7 @@ body {
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .bg-blue {
@@ -835,7 +753,7 @@ body {
   }
 }
 .contact_form_testimonial_saec .contact_form_section .form-inner .form-group input {
-  border: 1px solid #DADADA;
+  border: 1px solid;
   border-radius: 10px;
   padding: 13px 15px;
   font-size: 14px;
@@ -869,7 +787,7 @@ body {
   width: 100%;
   font-weight: 700;
   font-size: 44px;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -877,7 +795,7 @@ body {
   border-radius: 10px;
   background: #0a88e3;
   border: 1px solid #0a88e3;
-  color: #ffffff;
+  color: #fff;
   padding: 13px 16px;
   display: inline-block;
   min-width: 170px;
@@ -938,8 +856,9 @@ body {
   color: #232343;
 }
 .contact_form_testimonial_saec .slider_dots {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 25px;
 }
 @media (max-width: 991px) {
   .contact_form_testimonial_saec .slider_dots {
