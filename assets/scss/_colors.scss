@@ -1,5 +1,5 @@
 $colors: (
-    primary-font-color: #232343,
+    primary-font-color: #232323,
     pure-black: #000,
     pure-white: #fff,
     pure-purple:#2ec774,
@@ -7,11 +7,7 @@ $colors: (
     light_blue:#0a88e3,
     light_white: #f5f9ff,
     font-color: #232343,
-    secondary_ray:#DADADA,
-    light_gray: #ddd,
-    secondary_light_gray: #eee,
-    // light_blue:#deebff,
-    border-color: #D9D9D9   
+    light_gray: #ddd
 );
 
 @function color($color-name) {

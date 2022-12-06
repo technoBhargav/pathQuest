@@ -1,18 +1,4 @@
 $(document).ready(function () {
-  $('.tools_int_btn').click(function(){
-    $('.tools_section').toggleClass('rights');
-   
-    $('.pqscale > .container').toggleClass('blur');
-   
-    var $this = $(this);
-    $this.toggleClass('btn_togg');
-    if($this.hasClass('btn_togg')){
-        $this.text('close '); 
-        $('html, body').scrollTop($('.pqscale').offset().top);
-    } else {
-       $this.text('Tool Integrations');    
-    }  
-  });
   $('.rtl-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -42,8 +28,8 @@ $(document).ready(function () {
     autoplay: true,
     dots: false,
     adaptiveHeight: false,
-    nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><i class="fa fa-arrow-next" aria-hidden="true"></i></div>',
-    prevArrow: '<div class="slick-custom-arrow slick-custom-arrow-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>',
+    nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/assets/image/next-grey.png" alt=""></div>',
+    prevArrow: '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/assets/image/prev-grey.png" alt=""></div>',
     responsive: [
       {
         breakpoint: 767,
@@ -96,28 +82,25 @@ $(document).ready(function () {
     focusOnSelect: true,
     centerPadding: '10px',
   });
-  $(".centername_slider").slick({
-    variableWidth: true,
-    slidesToScroll: 1,
-    asNavFor: ".centerdetail_sider",
-    focusOnSelect: true,
-    arrows: false,
-    dots: false,
-    infinite: false,
-  });
-  $('#newname-left').click(function () {
-    $('.centername_slider').slick('slickPrev');
-  });
-  $('#namenew-right').click(function () {
-    $('.centername_slider').slick('slickNext');
-  });
-  $(".centerdetail_sider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: ".centername_slider",
-  });
+$(".centername_slider").slick({
+  variableWidth: true,
+  slidesToScroll: 1,
+  asNavFor: ".centerdetail_sider",
+  focusOnSelect: true,
+  arrows: true,
+  autoplay: true,
+  dots: false,
+  infinite: true,
+  nextArrow:
+    '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/assets/image/blueprev-grey.png" alt=""></div>',
+  prevArrow:
+    '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/assets/image/bluenext-grey.png" alt=""></div>',
+});
+$(".centerdetail_sider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".centername_slider",
+});
 }); 
-
-
